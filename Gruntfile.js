@@ -8,7 +8,7 @@ module.exports = function(grunt) {
    * TASKS
    */
   // build everything ready for a commit
-  grunt.registerTask('build', ['img', 'sass', 'js', 'jasmine']);
+  grunt.registerTask('build', ['sass', 'js', 'jasmine']);
   // just images
   grunt.registerTask('img', ['responsive_images:retina', 'exec:evenizer', 'responsive_images:regular', 'sprite', 'imagemin']);
   // just javascript

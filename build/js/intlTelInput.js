@@ -847,7 +847,7 @@
         _getDialCode: function(number) {
             var dialCode = "";
             // only interested in international numbers (starting with a plus)
-            if (number.charAt(0) == "+") {
+            if (String(number).charAt(0) == "+") {
                 var numericChars = "";
                 // iterate over chars
                 for (var i = 0; i < number.length; i++) {
